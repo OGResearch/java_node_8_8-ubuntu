@@ -21,9 +21,9 @@ RUN set -x \
 
 RUN set -x \
 	 apt-get install -y \
- 		openjdk-8-jdk \
                 git \
 		python2.7 \ 
+		openjdk-8-jdk \
 
 RUN set -x \
 	npm i -g bower \
