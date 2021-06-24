@@ -24,6 +24,6 @@ RUN set -x \
  		openjdk-8-jdk \
                 git \
 		python2.7 \ 
-	&& [ "$JAVA_HOME" = "$(docker-java-home)" ] \
 	&& npm i -g bower \
 	&& yarn global add bower
+
