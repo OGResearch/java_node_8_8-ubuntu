@@ -22,7 +22,7 @@ RUN set -x \
 RUN set -x \
 	&& apt-get install -y \
 		openjdk-8-jdk \
-                python2 \
+                python \
                 git \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ] \
 	&& npm i -g bower \
