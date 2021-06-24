@@ -16,14 +16,12 @@ RUN { \
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
 ENV PATH $PATH:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
 
-RUN set -x \
-        && apt-get -y update 
-
-RUN set -x \
-	 apt-get install -y \
-                git \
-		python2.7 \ 
-		openjdk-8-jdk \
+RUN apt-get update \
+ && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    git \
+    python2.7 \ 
+    openjdk-8-jdk \
+ && apt-get clean \
 
 RUN set -x \
 	npm i -g bower \
