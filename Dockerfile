@@ -17,7 +17,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
 ENV PATH $PATH:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
 
 RUN set -x \
-	&& apt-get install --no-cache \
+	&& apt-get install  \
 		openjdk-8-jdk \
     python2 \
     git \
