@@ -20,8 +20,8 @@ RUN set -x \
         && apt-get -y update 
 
 RUN set -x \
-	&& apt-get install -y \
-		openjdk-8-jdk \
+	 apt-get install -y \
+ 		openjdk-8-jdk \
                 git \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ] \
 	&& npm i -g bower \
