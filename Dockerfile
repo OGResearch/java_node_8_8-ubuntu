@@ -24,6 +24,7 @@ RUN apt-get update \
  && apt-get clean 
 
 RUN set -x \
+	&& [ "$JAVA_HOME" = "$(docker-java-home)" ] \
 	npm i -g bower \
 	&& yarn global add bower
 
