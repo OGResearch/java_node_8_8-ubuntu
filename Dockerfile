@@ -24,6 +24,8 @@ RUN set -x \
  		openjdk-8-jdk \
                 git \
 		python2.7 \ 
-	&& npm i -g bower \
+
+RUN set -x \
+	npm i -g bower \
 	&& yarn global add bower
 
