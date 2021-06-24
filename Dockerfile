@@ -21,7 +21,7 @@ RUN apt-get update \
     git \
     python2.7 \ 
     openjdk-8-jdk \
- && apt-get clean \
+ && apt-get clean 
 
 RUN set -x \
 	npm i -g bower \
